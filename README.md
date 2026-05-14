@@ -1,1 +1,3 @@
+# **TRELLIS.2-Text-to-3D-FA2**
+
 <img width="1771" height="1546" alt="screencapture-huggingface-co-spaces-prithivMLmods-TRELLIS-2-Text-to-3D-2026-05-14-20_02_24" src="https://github.com/user-attachments/assets/031ef49d-27f6-471d-984f-a427ed8887a5" />
