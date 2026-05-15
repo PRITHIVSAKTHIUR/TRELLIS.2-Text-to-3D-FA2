@@ -2,6 +2,10 @@
 
 A Gradio with Rerun Embedded demonstration for Microsoft’s TRELLIS.2-4B model with integrated Rerun visualization. It converts text prompts or uploaded images into high-quality, textured 3D assets (GLB) through a two-stage workflow: Text to Image (Z-Image-Turbo) → Image to 3D (TRELLIS.2). The demo features interactive 3D viewing powered by the Rerun SDK, with proper coordinate system setup, axes helpers, and downloadable GLB files.
 
+> [!IMPORTANT]
+Device Support and Testing (Blackwell Architecture): NVIDIA RTX PRO 6000 Blackwell Server Edition, Kernel (Memory-Efficient): FlashAttention 2
+
+
 ## Features
 
 - **Text-to-Image-to-3D**: Generate base images from prompts using Z-Image-Turbo, then lift to 3D.
