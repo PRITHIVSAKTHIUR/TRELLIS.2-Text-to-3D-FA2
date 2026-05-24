@@ -192,7 +192,7 @@ def preprocess_image(input: Image.Image) -> Image.Image:
 def get_seed(randomize_seed: bool, seed: int) -> int:
     return np.random.randint(0, MAX_SEED) if randomize_seed else seed
 
-@spaces.GPU
+@spaces.GPU(size="xlarge", duration=120)
 def generate_txt2img(prompt, progress=gr.Progress(track_tqdm=True)):
     """Generate Image using Z-Image Turbo"""
     if z_pipe is None:
@@ -218,7 +218,7 @@ def generate_txt2img(prompt, progress=gr.Progress(track_tqdm=True)):
     except Exception as e:
         raise gr.Error(f"Z-Image Generation failed: {str(e)}")
 
-@spaces.GPU(duration=120)
+@spaces.GPU(size="xlarge", duration=120)
 def generate_3d(
     image: Image.Image,
     seed: int,
@@ -404,7 +404,7 @@ css="""
 if __name__ == "__main__":
     os.makedirs(TMP_DIR, exist_ok=True)
 
-    with gr.Blocks(delete_cache=(300, 300)) as demo:
+    with gr.Blocks() as demo:
         gr.Markdown("# **TRELLIS.2 (Text-to-3D)**", elem_id="main-title")
         gr.Markdown("""
         **Workflow:**
