@@ -407,7 +407,7 @@ if __name__ == "__main__":
     with gr.Blocks() as demo:
         gr.Markdown("# **TRELLIS.2 (Text-to-3D)**", elem_id="main-title")
         gr.Markdown("""
-        **Workflow:**
+        [@github](https://github.com/PRITHIVSAKTHIUR/TRELLIS.2-Text-to-3D-FA2):
         Generate a 3D asset directly by converting Text-to-Image → 3D or Image-to-3D, powered by [TRELLIS.2](https://huggingface.co/microsoft/TRELLIS.2-4B) and [Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo).
         """)
 
